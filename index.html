@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Imagens </title>
+
+    <style type="text/css">
+        .grid{
+    display: grid;
+    grid-template-areas: 
+        "logo nav nav"
+        "logo conteudo section"
+        "logo container container"
+    ;
+
+    width: 900px;
+    height: 600px;
+
+    margin: 2em;
+}
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "header main footer"
+    ;
+
+    grid-area: container;
+}
+
+
+.logo{
+    grid-area: logo;
+    background-image: url("imagem1.jpg");
+    background-size: cover;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+
+.nav{
+    grid-area: nav;
+    background-image: url("imagem.jpg");
+    background-size: cover;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.conteudo{
+    grid-area: conteudo;
+    background-image: url("imagem4.jpg");
+    background-size: cover;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.section{
+    grid-area: section;
+    background-image: url("imagem3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.header{
+    grid-area: header;
+    background-image: url("imagem6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.main{
+    grid-area: main;
+    background-image: url("imagem5.jpg");
+    margin: 1em;
+    border-radius: 1em;
+
+}
+
+.footer{
+    grid-area: footer;
+    background-image: url("imagem2.jpg");
+    margin: 1em;
+    border-radius: 1em;
+}
+    </style>
+
+</head>
+<body>
+    <div class="grid">
+        <div class="item logo"></div>
+        <div class="item nav"></div>
+        <div class="item conteudo"></div>
+        <div class="item section"></div>
+        <div class="container">
+            <div class="item header"></div>
+            <div class="item main"></div>
+            <div class="item footer"></div>
+        </div>
+    </div>        
+</body>
+</html>
